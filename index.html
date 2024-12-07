@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Master of Motion</title>
+  <!-- Link to CSS in the styles folder -->
+  <link rel="stylesheet" href="styles/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="home-screen">
+    <div class="navbar">
+        <a href="#about" onclick="showAbout()">About</a>
+        <a href="#how-to-play" onclick="showHowToPlay()">How to Play</a>
+        <a href="#settings" onclick="showSettings()">Settings</a>
+    </div>
+    <div class="title" id="title">Master of Motion</div>
+    <button class="start-button" onclick="startGame()">START</button>
+    <canvas id="fallingCanvas"></canvas>
+
+  </div>
+
+  <div id="game-screen" style="display: none;">
+    <div class="navbar">
+        <a href="#home" onclick="goToHome()">Home</a>
+        <a href="#pause" onclick="pauseGame()">Pause</a>
+        <a href="#restart" onclick="restartGame()">Restart</a>
+        <a href="#settings" onclick="openSettings()">Settings</a>
+    </div>
+    <canvas id="gameCanvas"></canvas>
+  </div>
+
+  <div class="creator-name">
+    Created by Prof. Abdullah Awad
+  </div>
+
+  <!-- Link to JavaScript in the scripts folder -->
+  <script src="scripts/script.js"></script>
+</body>
+</html>

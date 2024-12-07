@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Orbitron', Arial, sans-serif;
+    background: linear-gradient(to bottom, #5a9bd4, #82c4e9); /* Light blue gradient */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  /* Canvas Styles */
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Optional: Ensures it spans the full width */
+    height: 100%; /* Optional: Ensures it spans the full height */
+    pointer-events: none; /* Prevents interference with buttons */
+  }
+
+
+  /* Title Animation */
+  .title {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bold;
+    animation: bounce 2s infinite;
+    text-shadow: 2px 2px 5px #000;
+    cursor: pointer;
+  }
+
+ /* Start Button */
+ .start-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px 30px;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Orbitron', Arial, sans-serif;
+  color: white;
+  text-shadow: 2px 2px 5px #000;
+  background: rgba(255, 255, 255, 0.2);
+  border: 3px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, background 0.2s ease-in-out;
+}
+
+.start-button:hover {
+  background: rgba(255, 255, 255, 0.4); /* Slightly brighter */
+}
+
+
+
+
+
+  /* Title Bounce Effect */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  #home-screen {
+    text-align: center;
+    margin-top: 20%;
+  }
+
+  #game-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #282c34; /* Dark background for the game area */
+  }/* Navbar Styles */
+
+
+/*navbar for home screen*/
+/* Navbar Styles */
+.navbar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(135, 206, 250, 0.8); /* Light sky blue with transparency */
+  padding: 10px 20px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  display: flex;
+  gap: 15px;
+  font-family: 'Orbitron', sans-serif; /* Match font with the rest of the page */
+  z-index: 100; /* Ensure it's above other elements */
+}
+
+/* Navbar Links */
+.navbar a {
+  color: #ffffff; /* White text */
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 5px 10px; /* Add padding for button-like appearance */
+  border-radius: 5px; /* Slightly rounded links */
+  transition: all 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+/* Hover Effect */
+.navbar a:hover {
+  background: #00bfff; /* Deep sky blue background on hover */
+  color: #ffffff; /* Change text color to black on hover */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+
+
+
+/*_____*/
+/* Creator's Name */
+.creator-name {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1rem;
+  color: #ffffff; /* Pure white */
+  text-shadow: 2px 2px 5px #000;
+  background: rgba(98, 180, 231, 0.8); /* Semi-transparent black background */
+  padding: 5px 10px;
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  z-index: 100; /* Ensure it’s above other elements */
+}
+@media (max-width: 768px) {
+  .creator-name {
+    font-size: 0.8rem;
+    bottom: 5px;
+    right: 5px;
+  }
+}
